@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>sagan.sh</title>
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+        body {
+            background-color: #c9bbec;
+        }
+
+        #outer {
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 28px;
+            text-align: center;
+            color: black;
+            padding-bottom: 10%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #under {
+            font-weight: 200;
+            font-size: 22px;
+        }
+
+        #sagan-button {
+            border: none;
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 56px;
+            background-color: transparent;
+            color: white;
+            transition: all .2s ease-in-out;
+            outline: none;
+        }
+
+        #sagan-button:hover {
+            cursor: pointer;
+            transform: scale(1.05) translateY(-8px);
+            text-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #sagan-button:active {
+            cursor: pointer;
+            transform: scale(1.0) translateY(-2px);
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100px;
+        }
+
+    </style>
 </head>
+
 <body>
-$END$
+    <div id="outer">
+        <img src="img/image.jpg" alt="sagan">
+        <h1>hey, i'm <button type="button" id="sagan-button" onclick="location.href = 'https://github.com/sagan1';"><em>sagan</em></button></h1>
+        <h3 id="under">I make, break, then fix things <br><br>🚀👨‍💻🌌</h3>
+    </div>
 </body>
+
 </html>
